@@ -33,7 +33,7 @@ function SENDMAILS($Subject, $Title, $Sendto, $MAIL_MSG, $SenderId = 1, $die = f
 
     //Recipients
     $mail->setFrom(SMTP_CONFIGS("FROM", $SenderId));
-    $mail->addAddress($Sendto);                                 //Add a recipient
+    $mail->addAddress($Sendto);                              //Add a recipient
 
     //Attachments
     //$mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
